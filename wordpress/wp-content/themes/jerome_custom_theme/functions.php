@@ -18,6 +18,7 @@ function jerome_theme_register_style(){
     $version = wp_get_theme()->get('Version');
     wp_enqueue_style('jerome_theme_style', get_template_directory_uri() . "/style.css", array('jerome_theme_bootstrap'), $version, "all");
     wp_enqueue_style('jerome_theme_bootstrap', "/wp-content/themes/jerome_custom_theme/assets/css/bootstrap.css", array(), "5.1.3", "all");
+    wp_enqueue_style('jerome_theme_bootstrap', "/wp-content/themes/jerome_custom_theme/assets/css/custom.css", array(), $version, "all");
 }
 
 add_action('wp_enqueue_scripts', 'jerome_theme_register_style');

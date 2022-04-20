@@ -15,10 +15,7 @@
             $custom_logo_id = get_theme_mod('custom_logo');
             $logo = wp_get_attachment_image_src($custom_logo_id);
             // the_custom_logo();
-          }
-
-          echo "<h4 class='jv-h4'>" . get_bloginfo('name') . "<h4>"; 
-      
+          }    
       ?>
 
       <img src="<?php echo $logo[0];?>" alt="sample" style="width: 40px; height:40px">
@@ -53,4 +50,14 @@
     
     ?>
 
-  </section>
+        </section>
+        <br>
+        <br>
+        <br>
+<header class="jv-container">
+    <div class="jv-container">
+        <div class="jv-row"><h1 class="jv-h1">This is Example</h1></div>
+        <div class="jv-row"></div>
+        <div class="jv-row"></div>
+    </div>
+</header>
